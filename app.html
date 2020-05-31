@@ -1,0 +1,52 @@
+<div id="app">
+    <h2>{{ products }} are in stock.</h2>
+    <p>
+        {{folder}}
+    </p>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script>
+    const app = new Vue ({
+        el: '#app',
+        data: {
+            products: 'Botas',
+            folder: 'folder da minha revista!'
+        }
+    })
+</script>
+
+<div id="myapp">
+    <h1>{{ item }}</h1>
+</div>
+
+<script>
+    const myapp = new Vue ({
+        el:'#myapp',
+        data: {
+            item: 'hello vue.js me chamo jaison!'   
+        }
+        })
+</script>
+
+<div id="myapp2">
+    <ul>
+        <li v-for="produto in produtos">
+            {{ produto }}
+        </li>
+    </ul>
+</div>
+
+<script>
+    const myapp2 = new Vue({
+        el: '#myapp2',
+        data: {
+            produtos: [
+                'produto 1',
+                'produto 2',
+                'produto 3'
+            ]
+        }
+    })
+</script>
