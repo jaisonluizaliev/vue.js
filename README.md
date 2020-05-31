@@ -1,0 +1,1 @@
+aqui estou apenas criando um read-me para mostrar meu progresso e inicialiazão em vue
